@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigerian Snacks - Gifted Hands Naija Bakery Hub</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="/Images/LOGO/logo.png.png" type="image/png">
+</head>
+<body>
+
+    <!-- 1. HEADER (Same as all your other pages) -->
+    <header class="glass-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <img src="/Images/LOGO/logo.png.png" alt="Gifted Hands Logo" class="header-logo">
+        <nav class="nav-dropdown" id="navDropdown">
+            <a href="bakery.html">Home</a>
+            <a href="Recipies.html" class="active-link">Recipies</a>
+            <a href="video-guides.html">Video Guides</a>
+            <a href="about.html">About Us</a>
+            <a href="special-hub.html">Special Hub</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. PAGE INTRO & BACK BUTTON -->
+        <section class="category-intro">
+            <a href="recipes.html" class="back-btn">&larr; Back to Categories</a>
+            <h1 class="category-title">NIGERIAN SNACKS</h1>
+            <p class="category-desc">
+                The heart of Nigerian baking. Master these classic, everyday snacks that sell fast and taste amazing.
+            </p>
+        </section>
+
+        <!-- 3. RECIPE CARDS GRID -->
+        <section class="recipe-cards-grid">
+            
+            <!-- Card 1: Meat Pie -->
+            <div class="recipe-card" data-target="modal-meatpie">
+                <div class="card-image" style="background-image: url('/Images/meaTpie.jpg');"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Meat Pie <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 2: Chin Chin -->
+            <div class="recipe-card" data-target="modal-chinchin">
+                <div class="card-image" style="background-image: url(/Images/chinchin.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Chin Chin <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 3: Puff Puff -->
+            <div class="recipe-card" data-target="modal-puffpuff">
+                <div class="card-image" style="background-image: url('/Images/puffpuff.jpg');"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Puff Puff <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+                        <!-- Card 4: Buns -->
+            <div class="recipe-card" data-target="modal-buns">
+                <div class="card-image" style="background-image: url(/Images/buns.jpeg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Nigerian Buns <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 5: Fish Pie -->
+            <div class="recipe-card" data-target="modal-fishpie">
+                <div class="card-image" style="background-image: url(/Images/fishpie.png);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Fish Pie <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 6: Butter Pie -->
+            <div class="recipe-card" data-target="modal-butterpie">
+                <div class="card-image" style="background-image: url(/Images/butterpie.png);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Butter Pie <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 7: Plantain Chips -->
+            <div class="recipe-card" data-target="modal-plantainchips">
+                <div class="card-image" style="background-image: url('/Images/plantainchips.jpg');"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Plantain Chips <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 8: Potato Chips -->
+            <div class="recipe-card" data-target="modal-potatochips">
+                <div class="card-image" style="background-image: url(/Images/potatochips.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Potato Chips <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 9: Peanut (Groundnut) -->
+            <div class="recipe-card" data-target="modal-peanut">
+                <div class="card-image" style="background-image: url(/Images/peanut.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Peanut Burger<span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Add more cards here later (Buns, Plantain Chips, etc.) -->
+
+        </section>
+
+        <!-- 4. MODALS (Hidden by default) -->
+        
+        <!-- Modal 1: Meat Pie -->
+        <div class="modal-overlay" id="modal-meatpie">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Classic Nigerian Meat Pie</h2>
+                <div class="modal-meta"><span>⏱️ 45 Mins</span><span>🍽️ 12 Pies</span><span>⭐⭐ Medium</span></div>
+                <div class="modal-body">
+                    <p><b>Meatpie is a popular, savory Nigerian snack, enjoyed with rich filling of meat and vegetables. Every delightful bite is packed with flavory blends that leave you begging for more!</b></p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>4 cups all-purpose flour</li>
+                        <li>250g butter</li>
+                        <li>2 eggs</li>
+                        <li>1/2 cup cold water</li>
+                        <li>1 tsp salt</li>
+                        <li>Seasoning cube</li>
+                        <li>1/2 tsp of baking powder</li>
+                        <li><b>Filling:</b> Minced meat, diced potatoes, carrots, onions, curry, thyme, salt.</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Mix flour, baking powder, salt, and butter in a bowl until it looks like breadcrumbs.</li>
+                        <li>Add beaten eggs and cold water gradually to form a firm dough. Refrigerate for 30 mins.</li>
+                        <li>Boil the meat, and vegetables with spices until tender. Let it cool.</li>
+                        <li>Roll out the dough, cut into circles, and place in pie tins.</li>
+                        <li>Add the filling, cover with another dough circle, and seal the edges with a fork.</li>
+                        <li>Arrange neatly on a baking tray.</li>
+                        <li>Brush with egg wash and bake at 350°F (175°C) for 30-35 mins until golden.</li>
+                        <li>Best served piping hot!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: Chin Chin -->
+        <div class="modal-overlay" id="modal-chinchin">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Crunchy Chin Chin</h2>
+                <div class="modal-meta"><span>️⏱️40 Mins</span><span>🍽️ Large Batch</span><span>⭐ Easy</span></div>
+                <div class="modal-body">
+                    <p><b>Get ready for the ultimate crunch! This iconic Nigerian snack is golden-fried perfection, packed with a rich, milky flavor and a warm hint of nutmeg. It is the perfect bite-sized party treat that is impossible to put down once you start snapping.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>4 cups flour</li>
+                        <li>1/2 cup sugar</li>
+                        <li>100g  butter</li>
+                        <li>2 eggs</li>
+                        <li>1/2 cup milk</li>
+                        <li>1 tsp baking powder</li>
+                        <li>1 tsp nutmeg</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Combine flour, sugar, baking powder and nutmeg together.</li>
+                        <li>Add butter and mix.</li>
+                        <li>Add egs and milk and knead to form a dough</li>
+                        <li>Roll out the dough and cut into small cubes or strips.</li>
+                        <li>Deep fry in hot oil on medium heat until golden brown and crunchy.</li>
+                        <li>Drain on paper towels and let it cool completely.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: Puff Puff -->
+        <div class="modal-overlay" id="modal-puffpuff">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Soft Puff Puff</h2>
+                <div class="modal-meta"><span>⏱️ 1.5 Hours (with rising)</span><span>🍽️ 20+ Balls</span><span>⭐⭐ Medium</span></div>
+                <div class="modal-body">
+                    <p><b>Meet Nigeria’s favorite comfort food. These golden, yeast-risen dough balls are delightfully crisp on the outside and cloud-soft on the inside. Every pillowy bite delivers a gentle, airy sweetness that instantly satisfies your cravings and keeps you hooked.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>4 cups flour</li>
+                        <li>1/2 cup sugar</li>
+                        <li>1 tbsp active dry yeast</li>
+                        <li>1 tsp nutmeg</li>
+                        <li>1/2 tsp salt</li>
+                        <li>2 cups warm water</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Mix flour, sugar, yeast, nutmeg, and salt in a large bowl.</li>
+                        <li>Gradually add warm water and whisk until you get a smooth, slightly sticky batter.</li>
+                        <li>Cover and let it rise in a warm place for 1 hour until doubled in size.</li>
+                        <li>Heat oil in a deep pot. Use your fingers or a spoon to drop small balls of batter into the hot oil.</li>
+                        <li>Fry until golden brown on all sides. Drain and serve warm!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+                <!-- Modal 4: Buns -->
+        <div class="modal-overlay" id="modal-buns">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Nigerian Buns</h2>
+                <div class="modal-meta"><span>️⏱️ 30 Mins</span><span>🍽️ 15 Buns</span><span>⭐⭐ Medium</span></div>
+                <div class="modal-body">
+                    <p><b>Buns is a local favorite! With an irresistable aroma that melts everyone's heart. One bite leaves you begging for more! It is nice and filling, especially when paired with one of your favorite drinks. Buns is a nationwide </b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>4 cups flour</li>
+                        <li>1/2 cup sugar</li>
+                        <li>1 tsp baking powder</li>
+                        <li>1/2 tsp nutmeg</li>
+                        <li>A pinch of salt</li>
+                        <li>1 egg</li>
+                        <li>1/4 cup melted butter</li>
+                        <li>Milk or water to mix</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Mix flour, salt, nutmeg and baking powder in a bowl.</li>
+                        <li>Whisk egg whites and sugar in a seperate container until foamy(optional).</li>
+                        <li>Add egg whites to flour and mix with milk or water until sticky dough is formed</li>
+                        <li>Heat oil in a deep pot.</li>
+                        <li>Scoop small portions of dough and drop into the hot oil.</li>
+                        <li>Fry until golden brown and cooked through. Drain and serve!</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5: Fish Pie -->
+        <div class="modal-overlay" id="modal-fishpie">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Savory Fish Pie</h2>
+                <div class="modal-meta"><span>⏱️ 50 Mins</span><span>🍽️ 10 Pies</span><span>⭐⭐ Medium</span></div>
+                <div class="modal-body">
+                    <p><b>Dive into a wave of savory perfection with our golden, flaky Fish Pie. This classic pastry is generously packed with a seasoned, moist fish filling and a rich blend of veggies. It is the ultimate comforting treat for seafood lovers looking for a delicious, savory escape.Butter Pie</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>4 cups flour</li
+                        ><li>250g butter</li>
+                        <li>1/2 cup cold water</li>
+                        <li>Fish or pepper sauce</li>
+                        <li>2 bell peppers</li>
+                        <li>1 tsp salt</li>
+                        <li><b>Filling:</b> Boneless fish (shredded tin mackerel or sardines), boiled eggs, onions, curry, thyme, scotch bonnet pepper.</li></ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Mix flour, baking powder, salt, and butter in a bowl until it looks like breadcrumbs.</li>
+                        <li>Add beaten eggs and cold water gradually to form a firm dough. Refrigerate for 30 mins.</li>
+                        <li>Mix the shredded fish with diced eggs, peppers, onions, sauce and spices.</li>
+                        <li>Roll out dough, fill with the fish mixture, and seal tightly.</li>
+                        <li>Brush with egg wash and bake at 350°F (175°C) for 30 mins until golden.</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6: Butter Pie -->
+        <div class="modal-overlay" id="modal-butterpie">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Flaky Butter Pie</h2>
+                <div class="modal-meta"><span>⏱️ 25 Mins</span><span>🍽️ 12 Pies</span><span>⭐⭐ Medium</span></div>
+                <div class="modal-body">
+                    <p><b>Dive into a wave of savory perfection with our golden, flaky Fish Pie. This classic pastry is generously packed with a seasoned, moist fish filling and a rich blend of veggies. It is the ultimate comforting treat for seafood lovers looking for a delicious, savory escape.Butter Pie</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>3 cups all purpose flour</li>
+                        <li>250g baking butter</li>
+                        <li>1/2 cup water</li>
+                        <li>1/2 cup sugar</li>
+                        <li>1 egg</li>
+                        <li>vanilla flavor(optional)</li>
+                        <li>1 tsp salt</li>
+                       </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Mix flour and baking powder.</li>
+                        <li>Rub in batter until crumbly</li>
+                        <li>Add sugar, egg and vanilla.</li>
+                        <li>Form a soft dough.</li>
+                        <li>Roll and shape into desired sizes.</li>
+                        <li>Arrange neatly on a baking tray.</li>
+                        <li>Bake at 350°F (175°C) for 30-35 mins until lightly golden brown.</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 7: Plantain Chips -->
+        <div class="modal-overlay" id="modal-plantainchips">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Crunchy Plantain Chips</h2>
+                <div class="modal-meta"><span>⏱️ 25 Mins</span><span>🍽️ Large Batch</span><span>⭐ Easy</span></div>
+                <div class="modal-body">
+                    <p><b>Savour the irresistible crunch of this legendary Nigerian street favorite! Made from perfectly sliced plantains and fried to a flawless golden crisp, it is the ultimate sweet-and-savory snack.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>4 unripe (green) plantains</li>
+                        <li>Vegetable oil for frying</li>
+                        <li>Salt to taste</li>
+                        <li>Optional: Pepper or garlic powder</li></ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Peel the green plantains and slice them very thinly (use a mandoline if you have one).</li>
+                        <li>Soak plantain slices in cold water and salt for 10 minutes. This helps give the plaintain a unique crispy texture when frying.</li>
+                        <li>Seive out the water from the plantain and sprinkle some salt, peper and garlic powder over it</li>
+                        <li>Heat oil in a pan over medium heat.</li>
+                        <li>Fry the slices in batches until they turn golden and crispy.</li>
+                        <li>Remove, drain on paper towels, and sprinkle with salt while hot.</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 8: Potato Chips -->
+        <div class="modal-overlay" id="modal-potatochips">
+            <div class="modal-content">
+                <p><b>Elevate your snacking game with our ultra-crispy, thinly sliced Potato Chips. Lightly seasoned and fried to absolute perfection, they offer a thunderous crunch that never goes out of style.</b></p>
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Homemade Potato Chips</h2>
+                <div class="modal-meta"><span>⏱️ 20 Mins</span><span>🍽️ Large Batch</span><span>⭐ Easy</span></div>
+                <div class="modal-body">
+                    <p><b>Potato chips are not just crispy, each crunch is a savory journey into a wild blend of hot salty spice that leaves your tongue with that irresistable and unforgettable. It is one of Nigerian's favorite quick snack.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>4 large potatoes</li
+                        ><li>Vegetable oil for frying</li>
+                        <li>Salt and pepper to taste</li>
+                        <li>Optional: white pepper or chicken seasoning for flavor</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Peel potatoes and slice them into very thin rounds.</li>
+                        <li>Soak in a bowl cold water for 30 mins to remove starch.</li>
+                        <li>Drain and rinse under cold water, then spread on a kitchen towel and pat to dry completely</li>
+                        <li>Stir fry in hot oil(170C/340F) until golden brown and crispy.</li>
+                        <li>Drain and season immediately with pepper or chicken seasoning.</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 9: Peanut -->
+        <div class="modal-overlay" id="modal-peanut">
+            <div class="modal-content">
+                <p><b>Crunch into pure satisfaction with our premium, perfectly roasted Peanuts. A staple in Nigerian snacking culture, these golden gems are expertly salted to deliver a rich, smoky, and timeless energy boost.</b></p>
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Crunchy Peanut Burger</h2>
+                <div class="modal-meta"><span>️ ⏱️15-20 Mins</span><span>🍽️ 6-8 servings</span><span>⭐⭐ Medium</span></div>
+                <div class="modal-body">
+                    <h3>Ingredients</h3>
+                    <ul><li>2 cups raw groundnuts(300g) - unblanched</li>
+                        <li>2 cups all purpose flor (sifted)</li>
+                        <li>3 tbsp granulated sugar</li>
+                        <li>2 tsp powdered milk (optional)</li>
+                        <li>1/2 tsp salt</li>
+                        <li>2 large eggs</li>
+                        <li>1/2 tsp baking powder (optional) - for extra crunch</li>
+                        <li>1/2 tsp nutmeg (optional) - for flavor</li>
+                        <li>3 tbsp water</li>
+                        <li>1 tsp cayenne pepper (optional)</li>
+                        <li>1 tbsp vegetable oil</li></ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Pick out any bad nuts or stone</li>
+                        <li>In a bowl sift flour, powdered milk, baking powder, nutmeg and half the salt. Mix well and set aside.</li>
+                        <li>In a seperate bowl, add sugar, remaining salt and 2 tbsp of water. Whisk until sugar dissolves completely.</li>
+                        <li>Coat peanuts: put peanuts in a bowl. Add 1 tbsp of egg mix, toss/shake until all nuts are lightly wet.
+                            Sprinkle 3tbsp flour mix over them. shake the bowl in circular motion so peanuts get coated.
+                            If it gets too wet, add more flour. Too dry, sprinkle.
+                            Repeat: a little egg mix, then flour mix. Keeping going until peanuts are well coated and round. 4-6 rounds,
+                        </li>
+                        <li>Rest: Leave coated peanuts to air-dry 10 mins. This helps coatting set so it doesnt fall off in oil.</li>
+                        <li>Deep fry in hot oil. Fry in small batches until golden brown.</li>
+                        <li>Drain and cool, let the cool completely!</li></ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to the NEW JavaScript file for this page -->
+    <script src="Recipies.js"></script>
+</body>
+</html>

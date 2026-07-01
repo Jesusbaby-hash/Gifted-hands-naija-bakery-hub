@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Gifted Hands Naija Bakery Hub</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="/Images/LOGO/logo.png.png" type="image/png">
+</head>
+<body class="login-page">
+
+    <!-- 1. HEADER (Same as all pages) -->
+    <header class="glass-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <img src="/Images/LOGO/logo.png.png" alt="Gifted Hands Logo" class="header-logo">
+        <nav class="nav-dropdown" id="navDropdown">
+            <a href="bakery.html">Home</a>
+            <a href="recipes.html">Recipies</a>
+            <a href="video-guides.html">Video Guides</a>
+            <a href="about.html">About Us</a>
+            <a href="special-hub.html">Special Hub</a>
+            <a href="login.html" class="active-link">Log In</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. LOGIN CONTAINER -->
+        <section class="login-section">
+            
+            <!-- Left Side: Image & Branding -->
+            <div class="login-image-side">
+                <div class="login-image-overlay"></div>
+                <div class="login-branding">
+                    <h1>GIFTED HANDS</h1>
+                    <p>Naija Bakery Hub</p>
+                    <span class="branding-line"></span>
+                    <p class="branding-tagline">Bake Your Future.<br>Build Your Legacy.</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="login-form-side">
+                <div class="form-container">
+                    <h2 class="form-title">Create Account</h2>
+                    <p class="form-subtitle">Join our community of young entrepreneurs</p>
+
+                    <form id="signupForm">
+                        <!-- Full Name -->
+                        <div class="input-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" placeholder="Enter your full name" required>
+                        </div>
+
+                        <!-- Date of Birth -->
+                        <div class="input-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Create a password" required>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-btn">Sign Up</button>
+
+                        <!-- Success Message (Hidden by default) -->
+                        <div id="successMessage" class="success-message">
+                            ✅ Welcome to Gifted Hands! Redirecting...
+                        </div>
+                    </form>
+
+                    <p class="form-footer">Already have an account? <a href="#">Log In</a></p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Script -->
+    <script src="login.js"></script>
+</body>
+</html>

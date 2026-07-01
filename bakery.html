@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifted Hands Naija Bakery Hub</title>
+    <link rel="icon" href="/Images/LOGO/logo.png.png" type="image/png">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <!-- HOMEPAGE HEADER -->
+<header class="home-header">
+    <!-- Your Logo -->
+    <div class="home-logo">
+        <img src="/Images/LOGO/logo.png.png" alt="Gifted Hands Logo">
+        <span class="home-site-name">GIFTED HANDS NAIJA BAKERY HUB</span>
+    </div>
+
+    <!-- 1. The UNIQUE Hamburger Button (Only for Homepage) -->
+    <button class="home-menu-toggle" id="homeMenuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- 2. The Navigation Links (Wrapped in a unique nav container) -->
+    <nav class="home-nav-dropdown" id="homeNavDropdown">
+        <a href="bakery.html" class="active-link">Home</a>
+        <a href="Recipies.html">Recipies</a>
+        <a href="video-guides.html">Video Guides</a>
+        <a href="about.html">About Us</a>
+        <a href="special-hub.html">Special Hub</a>
+        <a href="login.html">Log In</a>
+    </nav>
+</header>
+
+ <section class="hero-section">//Image section
+  <div class="hero-slideshow" id="heroSlideshow">
+    <div class="hero-slide active" style="background-image: url('Images/Youths1.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('Images/Youths2.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('Images/Youths3.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('Images/Youths4.jpg');"></div>
+  </div>
+  
+  //Snacks section
+  <div class="hero-overlay">
+    <h2 class="main-tagline">Empowering Youths For Tomorrow</h2>
+    <p class="sub-tagline">With Pastry Entrepreneurial Skills</p>
+  </div>
+</section>
+
+    <div class="snack-overlap">
+        <div class="snack-box">
+            <img src="/Images/SECTION SNACKS/meatpie.jpg" alt="Meat Pie">
+            <h3>Meat Pie</h3>
+            <p>A savory Nigerian favorite filled with seasoned meat and vegetables. Perfect for breakfast, snacks, or business ventures. Learn the secret to flaky pastry and rich filling!</p>    
+        </div>
+        <div class="snack-box">
+            <img src="/Images/SECTION SNACKS/chin chin.jpg" alt="Chin Chin">
+            <h3>Chin-Chin</h3>
+            <p>Crispy, crunchy, and utterly addictive! This beloved Nigerian snack is easy to make and highly profitable. Master the perfect crunch and flavor variations.</p>
+        </div>
+        <div class="snack-box">
+            <img src="/Images/SECTION SNACKS/cake.jpg" alt="Cake">
+            <h3>Cake</h3>
+            <p>Moist, sweet, and perfect for celebrations! From birthday cakes to wedding tiers, discover the art of Nigerian-style baking that keeps customers coming back.</p>
+        </div>
+    </div>
+
+    <!-- Floating action buttons -->
+     <div class="floating-actions">
+        <!-- Bread icon (clickable) -->
+         <button class="float-btn bread-btn" id="breadAction" aria-label="Bakery Specials">
+            <img src="/Images/bread-icon.png" alt="loaf of bread" class="btn-icon">
+         </button>
+
+         <!-- 2. Call button (shows number on hover) -->
+          <div class="float-btn-wrapper">
+            <button class="float-btn call-btn" aria-label="Call Us">
+                <img src="/Images/phone-icon.png" alt="phone icon" class="btn-icon">
+                <span class="call-tooltip">08069637278</span>
+            </button>
+          </div>
+
+     </div>
+
+     <!-- NEW PROMOTIONAL SECTION (Matches Video Concept) -->
+<section class="promo-section">
+  
+  <!-- Row 1: Image Left, Text Right -->
+  <div class="promo-row layout-left">
+    <div class="promo-img-boo slanted">
+      <img src="/Images/chicken-nuggets.jpg" alt="Feature 1">
+    </div>
+    <div class="promo-text">
+      <h2 class="promo-heading">DAILY NUGGETS</h2>
+      <p class="promo-desc">
+        The road to self-enterprenuership demands determination and steadfastness. Do not give up until you've establshed yourself with this profitable hands-on skill.
+      </p>
+    </div>
+  </div>
+
+  <!-- Row 2: Text Left, Image Right (Reversed) -->
+  <div class="promo-row layout-right">
+    <div class="promo-text">
+      <h2 class="promo-heading">KEEP BEING MOTIVATED</h2>
+      <p class="promo-desc">
+        Stay Determined. Stay Focused and Keep Building!
+      </p>
+      <a onclick="event.preventDefault(); window.location.href='sob.html';" style="pointer-events: auto !important; z-index: 99999 !important; position: relative; cursor: pointer;"><button class="promo-button" >SOB COMING SOON</button></a>
+    </div>
+    <div class="promo-img-box slanted">
+      <img src="/Images/happy-youths.jpg" alt="Feature 2">
+    </div>
+  </div>
+
+
+  <!-- HOMEPAGE MENU SCRIPT (Isolated) -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const homeToggle = document.getElementById('homeMenuToggle');
+    const homeNav = document.getElementById('homeNavDropdown');
+
+    if (homeToggle && homeNav) {
+      // Toggle menu on button click
+      homeToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        homeNav.classList.toggle('active');
+        homeToggle.classList.toggle('open');
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!homeNav.contains(e.target) && !homeToggle.contains(e.target)) {
+          homeNav.classList.remove('active');
+          homeToggle.classList.remove('open');
+        }
+      });
+    }
+  });
+</script>
+
+</section>
+
+<!-- Scripys -->
+    <script src="function.js"></script>
+    <!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

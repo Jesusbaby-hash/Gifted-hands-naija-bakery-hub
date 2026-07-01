@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Treats - Gifted Hands Naija Bakery Hub</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="/Images/LOGO/logo.png.png" type="image/png">
+</head>
+<body>
+
+    <!-- 1. HEADER (Same as all your pages) -->
+    <header class="glass-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <img src="/Images/LOGO/logo.png.png" alt="Gifted Hands Logo" class="header-logo">
+        <nav class="nav-dropdown" id="navDropdown">
+            <a href="bakery.html">Home</a>
+            <a href="Recipies.html" class="active-link">Recipies</a>
+            <a href="video-guides.html">Video Guides</a>
+            <a href="about.html">About Us</a>
+            <a href="special-hub.html">Special Hub</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. PAGE INTRO & BACK BUTTON -->
+        <section class="category-intro">
+            <a href="recipes.html" class="back-btn">&larr; Back to Categories</a>
+            <h1 class="category-title">SPECIAL TREATS</h1>
+            <p class="category-desc">
+                Premium bakery delights that impress. From party-ready small chops to loaded shawarmas and fresh parfaits.
+            </p>
+        </section>
+
+        <!-- 3. RECIPE CARDS GRID (5 Cards) -->
+        <section class="recipe-cards-grid">
+            
+            <!-- Card 1: Small Chops -->
+            <div class="recipe-card" data-target="modal-smallchops">
+                <div class="card-image" style="background-image: url(/Images/smallchops.png);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Small Chops <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 2: Parfait -->
+            <div class="recipe-card" data-target="modal-parfait">
+                <div class="card-image" style="background-image: url(/Images/parfait.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Nigerian Parfait <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 3: Shawarma -->
+            <div class="recipe-card" data-target="modal-shawarma">
+                <div class="card-image" style="background-image: url(/Images/chickensharwarma.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Chicken Shawarma <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 4: Pizza -->
+            <div class="recipe-card" data-target="modal-pizza">
+                <div class="card-image" style="background-image: url('/Images/pizza.jpg');"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Nigerian Style Pizza <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 5: Yogurt -->
+            <div class="recipe-card" data-target="modal-yogurt">
+                <div class="card-image" style="background-image: url(/Images/yoghurt.png);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Homemade Yogurt <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+        </section>
+
+        <!-- 4. MODALS -->
+        
+        <!-- Modal 1: Small Chops -->
+        <div class="modal-overlay" id="modal-smallchops">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Party Small Chops</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 1.5 Hours</span>
+                    <span>🍽️ Serves 8-10</span>
+                    <span>⭐⭐ Medium</span>
+                </div>
+                <div class="modal-body">
+                    <p><b>Get ready to party with this iconic Nigerian finger food platter! Packed with a fiery, delicious variety of puff-puff, samosas, spring rolls, and peppered meats, it is the ultimate bite-sized celebration of flavor.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>2 cups flour</li>
+                        <li>1/2 cup butter</li>
+                        <li>1/4 cup sugar</li>
+                        <li>2 eggs</li>
+                        <li>1 tsp baking powder</li>
+                        <li><b>Filling:</b> Diced carrots, cabbage, green peas, boiled eggs, curry, thyme, scotch bonnet.</li></ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Make a shortcrust pastry with flour, butter, sugar, egg, and baking powder. Chill for 20 mins.</li><li>Sauté vegetables and diced eggs with spices until tender. Let it cool.</li><li>Roll out dough, cut into circles, place in tart tins, and fill with vegetable mixture.</li><li>Bake at 350°F (175°C) for 20-25 mins until golden and crisp.</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: Parfait -->
+        <div class="modal-overlay" id="modal-parfait">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Layered Nigerian Parfait</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 15 Mins</span>
+                    <span>⏱️ Chill Time: 1 hour</span>
+                    <span>🍽️ Serves 4 large cups</span>
+                    <span>⭐ Easy</span>
+                </div>
+                <div class="modal-body">
+                    <p><b>Cool down with a vibrant, refreshing twist on a classic dessert. Layers of creamy yoghurt, crunchy granola, and fresh tropical fruits come together to create a sweet, energizing treat perfect for any time of day.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>3 cups(720ml) plain or Greek yogurt</li>
+                        <li>3 tbsp powdered milk(optional)</li>
+                        <li>1/2 cup granola or crushed biscuits</li>
+                        <li>1/4 cup mixed fruits (berries, banana, grapes, groundnuts/cashews)</li>
+                        <li>1 tbsp honey/condensed milk</li>
+                        <li>1 tbsp vanilla extract</li>
+                        <li>1 tbsp chia seeds (optional)</li></ul>
+                    <h3>Instructions</h3>
+                    <ol><li>In a bowl, whisk yoghurt until smooth. Stir in powdered milk, honey/condensed milk, and vanilla. Chill 30mins to thicken.</li>
+                        <li>Wash and dice all fruits into small-bite size cues. Pat dry with paper towel to avoid wetness.</li>
+                        <li>In clear cups or jars, build layers: Spoon 2-3 tbsp yoghurtat bottom. A layer of mixed fruit. A layer of granola and nuts. Repeat 2-3 times.</li>
+                        <li>Drizzle with honey and top with chia seeds. Chill for at least and 1 hour.</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: Shawarma -->
+        <div class="modal-overlay" id="modal-shawarma">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Loaded Nigerian Shawarma</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 45 Mins</span>
+                    <span>🍽️ Serves 4</span>
+                    <span>⭐⭐ Medium</span>
+                </div>
+                <div class="modal-body">
+                    <p><b>Indulge in Nigeria’s favorite street-side wrap, bursting with bold, smoky flavor. Grilled, spiced chicken is tightly wrapped in soft flatbread with fresh veggies and our signature creamy, sweet-and-spicy cream sauce.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>Boneless chicken tighs or breast(600g) - thinly sliced</li>
+                        <li>Onion 1/2 small, grated</li>
+                        <li>Garlic and Ginger 3 cloves minced & 1tsp, grated</li>
+                        <li>Curry powder/shawarma spice 1tsp</li>
+                        <li>Dried thyme & Black pepper 1/2tsp</li>
+                        <li>Chicken seasoning cube 1 - crushed</li>
+                        <li>Salt 1tsp</li>
+                        <li>Vegetable oil & Lemon juice 2tbsp, 1 tbsp</li>
+                        <li>1/2 cup cheese slices (shredded)</li>
+                        <li>1/4 cup spicy mayo (mix mayo + ketchup + pepper)</li><li>Sliced onions & tomatoes</li>
+                        <li><b>For Shawarma sauce:</b>(sugar 1/2tsp, Chilli powder/ Hot sauce - to taste, Evaporated milk 1tbsp, mayonnaise 1/2cup)</li>
+                        <li><b>For Assembly:</b> Shawarma bread/large flour tortillas(6), Cabbage 2cups - finely shredded, Carrot 1 medium,julienned, Tomato 1 deseeded and sliced, Onion 1/2 medium, thinly sliced, Cucumber 1/2 cut into strips(optional)</li>
+                        </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Mix chicken with onions, garlic, ginger, all spices, seasoning cube, salt, oil and lemon juice. Cover and marinate 1 hour minimum, overnight is best.</li>
+                        <li>Sear chicken miz in a hot pan 6-8 mins until browned with charred edges. Chop into bite pieces.</li>
+                        <li>Whisk mayonnaise, ketchup,evaporated milk, sugar and chilli pe[er. It should be creamy, sweet-tangy.</li>
+                        <li>Toss cabbage,carrot,tomato, onions and cucumber together.</li>
+                        <li>Heat shawarma bread 20 seconds per side on a dry pan so it rolls without cracking.</li>
+                        <li><b>Assemble:</b> Spread sauce on bread, add veggies, add chicken, drizzle more sauce. The fold the bottom up, roll tightly, wrap in foil.</li>
+                        <li>Toast seam-side down on a hot dry pan or sandwich maker for 2-3 mins per side to seal and crisp.</li>
+                        <li>Best served warm with your favorite drink!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4: Pizza -->
+        <div class="modal-overlay" id="modal-pizza">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Nigerian Style Pizza</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 1.5 Hours</span>
+                    <span>🍽️ Serves 4-6</span>
+                    <span>⭐⭐ Medium</span>
+                </div>
+                <div class="modal-body">
+                    <h3>Ingredients</h3>
+                    <ul><li><b>Dough:</b> 3 cups flour, 1 tbsp yeast, 1 cup warm water, 2 tbsp oil, 1 tsp salt, 1 tsp sugar</li><li><b>Toppings:</b> Tomato sauce, mozzarella cheese, diced peppers, onions, sausage/chicken, sweet corn</li></ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Mix yeast, sugar, and warm water. Let it foam for 10 mins.</li><li>Add flour, oil, and salt. Knead into a smooth dough. Let it rise for 45 mins.</li><li>Roll out dough, place on a baking tray, and spread tomato sauce evenly.</li><li>Add cheese, meats, and vegetables. Bake at 400°F (200°C) for 15-20 mins until crust is golden and cheese is bubbly.</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5: Yogurt -->
+        <div class="modal-overlay" id="modal-yogurt">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Creamy Homemade Yogurt</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 20 Mins (+ 8-12 hrs chilling)</span>
+                    <span>🍽️ Makes 1.5 Liters 6-8 servings</span>
+                    <span>⭐⭐⭐ Advanced</span>
+                </div>
+                <div class="modal-body">
+                    <h3>Ingredients</h3>
+                    <ul><li>Whole milk - 1.5 liters full-cream milk for creamiest result</li>
+                        <li>Powdered milk 1/2 cup(60g) - optional, makes it richer and thicker</li>
+                        <li>Sugar 1/2 - 1/2 cup(50-100g)</li>
+                        <li>Plain yogurt 3 tbsp(45g) - with live cultures OR 1 sachet yogurt starter</li>
+                        <li>2 tbsp sugar or honey (optional)</li>
+                        <li>1 tsp vanilla extract (optional)</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Heat milk in a pot until it just begins to simmer (do not boil). Whisk in powdered milk until no lumps. Bring to (about 185°F/85°C) just before boiling.</li>
+                        <li>Let milk cool to 43-46°C/110-115°F. This is important. Too hot milk kills starter. too cold and it wont ferment. To check without thermometer, dip a clean finger. It should feel like a warm bath water.</li>
+                        <li><b>Add starter:</b> Take 1/2 cup of the warm milk, mix with the 3 tbsp of plain yoghurt until smooth. Pour that back into the pot. Add sugar and vanilla if using, then stir gently..</li>
+                        <li><b>Incubate:</b> Pour into a clean bowl or flask with a tight lid. Wrap the container with a thick towel. Put it in a warm, draft-free place for 8-12 hours. Dont move or open during this time.</li>
+                        <li>After 8 hours, it should look set like soft jelly and smell tangy. If its still milky give it 2-4 more hours.</li>
+                        <li><b>Chill:</b> Once set, stir gently to smoothen it out. For Greek style, strain through a cheesecloth for 2 hours. Refrigerate at least 3 hours before eating.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Uses the exact same JS file as the other recipe pages -->
+    <script src="Recipies.js"></script>
+</body>
+</html>

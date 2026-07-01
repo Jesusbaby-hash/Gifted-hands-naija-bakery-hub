@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOB - Gifted Hands Naija Bakery Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+
+</head>
+<body>
+    <>
+        <main>
+    <!-- HERO SECTION FOR SOB -->
+    <section class="sob-hero">
+        <h1>School of Business (SOB)</h1>
+        <p>Baking the Skills. Building the Empire.</p>
+    </section>
+
+    <!-- SECTION 1: THE SPARK -->
+    <section class="sob-section">
+        <h2>From Hobby to Hustle: Starting Your Journey</h2>
+        <p>Many people think you need a massive shop and millions of Naira to start a bakery business. That is a lie. Some of the biggest bakery brands in Nigeria today started in small home kitchens. The journey of an entrepreneur begins with a single decision: the decision to start. You already have the recipes; now it's time to turn your kitchen into a cash cow.</p>
+    </section>
+
+    <!-- SECTION 2: THE C.H.E.F. MINDSET -->
+    <section class="sob-section">
+        <h2>The C.H.E.F. Mindset for Success</h2>
+        <div class="chef-grid">
+            <div class="chef-card">
+                <h3>C - Consistency</h3>
+                <p>Your puff puff must taste the same every single time. Customers return for what they know and trust. Don't change your recipe randomly.</p>
+            </div>
+            <div class="chef-card">
+                <h3>H - Hard Work</h3>
+                <p>Entrepreneurship is not a 9-to-5 job. It requires early mornings, late nights, and the grit to keep going even when sales are slow.</p>
+            </div>
+            <div class="chef-card">
+                <h3>E - Excellence</h3>
+                <p>Never compromise on your ingredients. A bad meat pie will ruin your reputation faster than a bad attitude. Quality is your best marketing.</p>
+            </div>
+            <div class="chef-card">
+                <h3>F - Financial Discipline</h3>
+                <p>Never mix your business money with your personal pocket money. Track every Naira spent and reinvest your profits to grow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE CHARGE -->
+    <section class="sob-section charge-section">
+        <h2>Beyond the Oven: Think Outside the Box</h2>
+        <p>Bakery skills don't just stop at learning how to mix flour and bake. You must think outside the box. Can you package your small chops for wedding parties? Can you create a "breakfast subscription" for offices near you? Can you teach others what you know? Innovation and creativity are what separate a small home baker from a bakery mogul. Don't just bake; create solutions!</p>
+    </section>
+
+    <!-- SECTION 4: PRICING & PACKAGING -->
+    <section class="sob-section">
+        <h2>The Golden Rules of Pricing and Packaging</h2>
+        <div class="rules-container">
+            <div class="rule-box">
+                <h4>1. Never Guess Your Price</h4>
+                <p>Calculate the cost of every single egg, cup of flour, and drop of oil. Add your labor cost, and then add your profit margin. If you guess your price, you will eventually run your business at a loss.</p>
+            </div>
+            <div class="rule-box">
+                <h4>2. Packaging Sells</h4>
+                <p>A plain meat pie in a clear nylon bag sells for ₦200. That exact same meat pie in a neat, branded paper box sells for ₦500. People eat with their eyes first. Invest in good, clean packaging.</p>
+            </div>
+        </div>
+    </section>
+</main>
+    
+<!-- SOB JAVASCRIPT -->
+     <!-- SOB PAGE MENU SCRIPT (Isolated) -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById('menuToggle');
+        const dropdown = document.getElementById('navDropdown');
+
+        if (toggleBtn && dropdown) {
+          // Toggle menu on button click
+          toggleBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdown.classList.toggle('active');
+            toggleBtn.classList.toggle('open');
+          });
+
+          // Close menu when clicking outside
+          document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target) && !toggleBtn.contains(e.target)) {
+              dropdown.classList.remove('active');
+              toggleBtn.classList.remove('open');
+            }
+          });
+        }
+      });
+    </script>
+</body>
+</html>
+</body>
+</html>

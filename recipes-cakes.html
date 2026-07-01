@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes & Bakes - Gifted Hands Naija Bakery Hub</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="/Images/LOGO/logo.png.png" type="image/png">
+</head>
+<body>
+
+    <!-- 1. HEADER -->
+    <header class="glass-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <img src="/Images/LOGO/logo.png.png" alt="Gifted Hands Logo" class="header-logo">
+        <nav class="nav-dropdown" id="navDropdown">
+            <a href="bakery.html">Home</a>
+            <a href="Recipies.html" class="active-link">Recipies</a>
+            <a href="video-guides.html">Video Guides</a>
+            <a href="about.html">About Us</a>
+            <a href="special-hub.html">Special Hub</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. PAGE INTRO & BACK BUTTON -->
+        <section class="category-intro">
+            <a href="recipes.html" class="back-btn">&larr; Back to Categories</a>
+            <h1 class="category-title">CAKES & BAKES</h1>
+            <p class="category-desc">
+                From rich chocolate to light sponge. Master the art of baking beautiful, delicious cakes for any occasion.
+            </p>
+        </section>
+
+        <!-- 3. RECIPE CARDS GRID (6 Cakes = 2 perfect rows of 3) -->
+        <section class="recipe-cards-grid">
+            
+            <!-- Card 1: Chocolate Cake -->
+            <div class="recipe-card" data-target="modal-chocolate">
+                <div class="card-image" style="background-image: url(/Images/chococake.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Chocolate Cake <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 2: Red Velvet Cake -->
+            <div class="recipe-card" data-target="modal-redvelvet">
+                <div class="card-image" style="background-image: url(/Images/redvelvet1.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Red Velvet Cake <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 3: Strawberry Cake -->
+            <div class="recipe-card" data-target="modal-strawberry">
+                <div class="card-image" style="background-image: url(/Images/strawberrycake.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Strawberry Cake <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 4: Sponge Cake -->
+            <div class="recipe-card" data-target="modal-sponge">
+                <div class="card-image" style="background-image: url(/Images/spongecake.jpg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Classic Sponge Cake <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 5: Simple Cream Cake -->
+            <div class="recipe-card" data-target="modal-creamcake">
+                <div class="card-image" style="background-image: url(/Images/creamcake.jpg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Simple Cream Cake <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 6: Classic Cupcakes (Bonus to complete the grid!) -->
+            <div class="recipe-card" data-target="modal-cupcakes">
+                <div class="card-image" style="background-image: url(/Images/cupcake.webp);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Classic Cupcakes <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+        </section>
+
+        <!-- 4. MODALS -->
+        
+        <!-- Modal 1: Chocolate Cake -->
+        <div class="modal-overlay" id="modal-chocolate">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Rich Chocolate Cake</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 1 Hour</span>
+                    <span>🍽️ 12 Slices</span>
+                    <span>⭐⭐⭐ Advanced</span>
+                </div>
+                <div class="modal-body">
+                    <p><b>Indulge your deepest cravings with this decadent masterpiece. Layers of rich, moist chocolate sponge are smothered in a glossy, velvety fudge frosting to deliver a powerful burst of pure cocoa bliss.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>2 cups(250g) all purpose flour</li>
+                        <li>2 cups(400g) granulated</li>
+                        <li>3/4 cup(75g) cocoa powder - unsweetened for richer color</li>
+                        <li>1/2 tsp baking soda</li>
+                        <li>2 tsp baking powder</li>
+                        <li>1 tsp salt</li>
+                        <li>2 eggs</li>
+                        <li>1 cup(240ml) whole milk</li>
+                        <li>1/2 cup(120ml) vegetable oil</li>
+                        <li>2 tsp vanilla extract</li>
+                        <li>1 cup boiling water or hot coffee</li>
+                        <!-- For Chocolate frosting -->
+                         <li><b>Chocolate Frosting:</b> Unsalted butter 1 cup(226g) - softened. Cocoa powder 3/4 cups(75g). Powdered sugar 31/2 cups(420g) - sifted. Milk 1/2 cup(80ml). Vanilla extract 1 tsp. Salt 1/4 tsp.</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Preheat oven to 350°F (175°C). Grease and flour two 9-inch round pans.Line bottoms with parchment paper and dust sides with cocoa powder.</li>
+                        <li>Mix dry ingredients (sifted flour, sugar, cocoa, baking soda, salt) in a large bowl.</li>
+                        <li>Add eggs, milk, oil, and vanilla. Beat with mixer or hand on medium speed for 2 minutes. Batter will be thick.</li>
+                        <li>Pour in boiling water or hot coffee slowly while mixing. (batter will be thin - correct and makes cake moist). Pour into pans.</li>
+                        <li>Bake for 30-35 minutes. Cool completely before frosting with chocolate ganache.</li>
+                        <!-- Make the Frosting -->
+                         <li><b>Frosting:</b> In a bowl, beat softened butter until creamy, about 2 mins</li>
+                         <li>Sift cocoa powder into butter and beat until combined.</li>
+                         <li>Add sugar and milk, i cup sugar at a time, alternating with milk. Add vanila and salt. Beat 3 mins until light and fluffy. If too thick, add 1tbsp milk. Too thin, add more powdered sugar.</li>
+                         <li><b>Assemble Frosting:</b> Level cakes if domed. Place one layer on plate, spread 1 cup frosting on top.</li>
+                         <li>Add second layer, cover top and sides with remaining frosting.</li>
+                         <li>Chill 20 mins to set if yout kicthen is hot.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: Red Velvet Cake -->
+        <div class="modal-overlay" id="modal-redvelvet">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Classic Red Velvet Cake</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 1.5 Hours</span>
+                    <span>️ 🍽️12 Slices</span>
+                    <span>⭐⭐⭐ Advanced</span>
+                </div>
+                <div class="modal-body">
+                    <p><b>Fall in love with the ultimate velvet luxury. This striking crimson cake is incredibly moist, deeply cocoa-infused, and layered with a rich, tangy cream cheese frosting that melts perfectly in your mouth.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>2 1/2 cups(312g) all purpose flour</li>
+                        <li>1 1/2 cups(300g) granulated sugar</li>
+                        <li>1 tsp baking soda</li>
+                        <li>1 tsp salt</li>
+                        <li>1 tbsp cocoa powder - unsweetened</li>
+                        <li>11/2 cups(600ml) vegetable oil - it keeps moist for days</li>
+                        <li>1 cup(240ml) buttermilk - room temperature</li>
+                        <li>2 eggs</li>
+                        <li>2 tbsp red food coloring(liquid or gel)</li>
+                        <li>1 tsp vanilla & 1 tsp white vinegar</li>
+                        <li><b>No Buttermilk?:</b>Mix 1 cup milk = 1 tbsp lemon juice or vinegar. Let it sit 5 mins</li>
+                        <li><b>Cream Cheese Frosting:</b> Cream cheese 2 blocks(450g) - full fat, cool and softened, butter, powered sugar 4cups(480g) - sifted, Unsalted butter 1/2cup(113g), Vanilla extract 11/2 tsp, Salt 1/8tsp.</li></ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Preheat oven to 350°F (175°C). Grease 2 x 8 inch round pans, line bottoms with parchment, dust sides with flour.</li>
+                        <li>Sift flour, sugar, baking soda, salt, and cocoa powder into large bowl. Mix together</li>
+                        <li>In another bowl, mix oil, buttermilk, eggs, food coloring, vanilla, and vinegar until well combined. The batter should be bright red.</li>
+                        <li>Combine wet and dry ingredients. Mix on meduim-low just until smooth. Don't overmix.</li>
+                        <li>Divide evenly between pans. Bake for 30-32 mins. Toothpick should come out with a few moist crumbs. The top will spting back when touched.</li>
+                        <li>Cool completely for 30 mins before frosting.</li>
+                        <li><b>Make the Frosting:</b> Beat cream cheese = butter together for 2-3 mins until smoooth and no lumps. Then add powdered sugar 1 cup at a time on low speed. Add vanilla and salt, beat 2 mins on medium until fluffy. Don't overbeat</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: Strawberry Cake -->
+        <div class="modal-overlay" id="modal-strawberry">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Fresh Strawberry Cake</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 1 Hour</span>
+                    <span>🍽️ 10 Slices</span>
+                    <span>⭐⭐ Medium</span>
+                </div>
+                <div class="modal-body">
+                    <h3>Ingredients</h3>
+                    <p><b>Celebrate summer flavors with this vibrant and refreshing treat. Our soft, moist sponge is infused with real strawberry goodness and layered with a sweet, fruity frosting that delivers a delightful burst of berry bliss in every slice.</b></p>
+                    <ul><li>2 1/2 cups cake flour</li><li>2 cups sugar</li><li>1 tbsp baking powder</li><li>1 cup butter (softened)</li><li>4 eggs</li><li>1 cup pureed fresh strawberries</li><li>1/2 cup milk</li><li>Red food coloring (optional)</li></ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Cream butter and sugar until fluffy. Add eggs one at a time.</li><li>Mix in strawberry puree and a drop of food coloring.</li><li>Alternately add dry ingredients and milk. Mix until smooth.</li><li>Pour into greased pans and bake at 350°F (175°C) for 25-30 mins.</li><li>Frost with strawberry buttercream and top with fresh sliced strawberries.</li></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4: Sponge Cake -->
+        <div class="modal-overlay" id="modal-sponge">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Light & Fluffy Sponge Cake</h2>
+                <div class="modal-meta">
+                    <span>️⏱️35 Mins + chilling</span>
+                    <span>🍽️ 12 Slices</span>
+                    <span>⭐⭐ Medium</span>
+                </div>
+                <div class="modal-body">
+                    <p><b>Embrace the timeless beauty of a true bakery classic. This golden cake is exceptionally light, airy, and delicately sweet, offering a comforting, buttery melt-in-your-mouth experience with every single slice.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>All purpose flour 2cups(250g)</li>
+                        <li>4 eggs (room temperature)</li>
+                        <li>Granulated sugar 1cup(200g)</li>
+                        <li>Unsalted butter/margarine 1 cup(220g) - softened to room temperature</li>
+                        <li>Baking powder 2tbsp</li>
+                        <li>2 tsp vanilla extract</li>
+                        <li>Whole milk 1/4cup(120ml), room temperature</li>
+                        <li>1/4 cup nutmeg(optional)</li>
+                        <li>1/4 tsp salt</li>
+                        <li><b>Whipped Cream frosting:</b>Heavy whipping cream 21/2cups(600ml), cold. Powdered sugar 1/2cup(60g), sifted. Vanilla extract 1tsp. Milk powder 2tbsp</li>
+                        <li>Assemn</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Preheat oven to 340°F/(170°C). Grease an 8-inch round pan, line bottom with parchment paper, dust the sides with flour.</li>
+                        <li>Ina a large bowl, beat softened butter and sugar together for 4-5 mins until pale, light and fluffy. This gives a proper sponge rise.</li>
+                        <li>Add eggs one at a time, beating well after each. Add vanilla with the last egg. If batter looks curdled, add 1tbsp of measured flour.</li>
+                        <li>In a seperate bowl, sift flour, baking powder, salt and nutmeg together.</li>
+                        <li>Add the flour mix to the butter mix in 2 batches, alternating with milk. Mix on low, just until combined. Do not overmix.</li>
+                        <li>Pour into pan, smoothen top and bake for 30-35 mins, until golden and a toothpick comes clean.</li>
+                        <li>Cool completely before frosting!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5: Simple Cream Cake -->
+        <div class="modal-overlay" id="modal-creamcake">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Vanilla Cream Cake</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 50 Mins</span>
+                    <span>🍽️ 10 Slices</span>
+                    <span>⭐⭐ Medium</span>
+                </div>
+                <div class="modal-body">
+                    <p><b>Keep it classic, light, and endlessly delicious. Our signature vanilla sponge is layered with clouds of fresh, fluffy whipped cream and a hint of sweetness that makes every slice feel like a celebration.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>Cake flour 2cups(250g)</li>
+                        <li>4 eggs (room temperature)</li>
+                        <li>Granulated sugar 1cup(200g)</li>
+                        <li>Baking powder 2tbsp</li>
+                        <li>2 tsp vanilla extract</li>
+                        <li>Whole milk 3/4cup(180ml), room temperature</li>
+                        <li>1/4 cup melted butter</li>
+                        <li><b>Whipped Cream frosting:</b>Heavy whipping cream 21/2cups(600ml), cold. Powdered sugar 1/2cup(60g), sifted. Vanilla extract 1tsp. Milk powder 2tbsp</li>
+                        <li><b>For Assembly:</b>1/4 cup water + 2tbsp sugar, boiled and cooled(optional). Fresh fruit sprinkles, or chocolate shavings for topping.</li>
+                    </ul>
+                    <ol><li>Preheat oven to 350°F/(175°C). Grease and line 2 x 8 inch round pans.</li>
+                        <li>Add eggs one at a time, beat well and add vanilla.</li>
+                        <li>Sift flour, baking powder and salt together.</li>
+                        <li>Add flour in 2 batches, alternating with milk. Mix just until combined.</li>
+                        <li>Divide between pans. Bake for 25-28mins. until a toothpick comes out clean.</li>
+                        <li>Cool cake 10 mins, then turn out. Coold completely and chill 30 mins.</li>
+                        <li><b>Make whipped cream:</b>Chill mixing bowl and beaters 15 mins in freezer. Pour in cold heavy cream, beat on meduim-high until soft peaks form. Add powdered sugar, vanilla and milk powder. Beat until firm peaks hold. Stop as soon as it holds shape(Overbeating turns it grainy).</li>
+                        <li><b>Assemble:</b>Level the cake layers if needed. Brush both layers lightly with simple syrup. Place one layer on a plate. Spread about 1 cup of whipped cream over it. Top the second layer and cover the top and sies with remaining cream. Pipe around the edges if you like. Decorate with fruit, sprinkles or chocolate shavings.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6: Classic Cupcakes -->
+        <div class="modal-overlay" id="modal-cupcakes">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Classic Vanilla Cupcakes</h2>
+                <div class="modal-meta">
+                    <span>⏱️ 30 Mins</span>
+                    <span>🍽️ 12 Cupcakes</span>
+                    <span>⭐ Easy</span>
+                </div>
+                <div class="modal-body">
+                    <p><b>Embrace the timeless beauty of a true bakery classic. This golden cake is exceptionally light, airy, and delicately sweet, offering a comforting, buttery melt-in-your-mouth experience with every single slice.</b></p>
+                    <h3>Ingredients</h3>
+                    <ul><li>1 1/2 cups flour</li>
+                        <li>1 cup sugar</li>
+                        <li>1/2 cup butter (softened)</li>
+                        <li>2 eggs</li>
+                        <li>1/2 cup milk</li>
+                        <li>2 tsp vanilla extract</li>
+                        <li>1 1/2 tsp baking powder</li>
+                        <li>1/4 tsp salt</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Preheat oven to 350°F (175°C) and line a muffin tin with cupcake liners.</li>
+                        <li>Cream butter and sugar. Add eggs and vanilla.</li>
+                        <li>Mix in dry ingredients alternately with milk until just combined.</li>
+                        <li>Fill cupcake liners 2/3 full. Bake for 18-20 minutes until a toothpick comes out clean.</li>
+                        <li>Cool completely and top with your favorite buttercream frosting!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Link to the SAME recipes.js file -->
+    <script src="Recipies.js"></script>
+</body>
+</html>

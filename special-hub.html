@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Hub - Gifted Hands Naija Bakery Hub</title>
+    
+    <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="/Images/LOGO/logo.png.png" type="image/png">
+</head>
+<body>
+
+    <!-- 1. HEADER (Same as About Us page) -->
+    <header class="glass-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <img src="/Images/LOGO/logo.png.png" alt="Gifted Hands Logo" class="header-logo">
+        <nav class="nav-dropdown" id="navDropdown">
+            <a href="bakery.html">Home</a>
+            <a href="Recipies.html">Recipies</a>
+            <a href="video-guides.html">Video Guides</a>
+            <a href="about.html">About Us</a>
+            <a href="special-hub.html" class="active-link">Special Hub</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. PAGE INTRO SECTION -->
+        <section class="hub-intro">
+            <h1 class="hub-title">PANCAKES</h1>
+            <p class="hub-subtitle">Special Pancake Recipes</p>
+            <p class="hub-desc">
+                Welcome to my personal recipe vault. These are my tired-and-true, secret family recipes. 
+                Click on any card below to reveal the full ingredients and step-by-step instructions.
+            </p>
+
+        <!-- 3. RECIPE CARDS GRID -->
+        <section class="recipes-grid">
+            <!-- Card 1: Banana Pancake -->
+            <div class="recipe-card" data-target="modal-banana">
+                <div class="card-image" style="background-image: url(/Images/LOGO/bananapancake.jpg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Banana Pancake <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 2: Plantain Pancake -->
+            <div class="recipe-card" data-target="modal-plantain">
+                <div class="card-image" style="background-image: url(/Images/LOGO/plantainpancake.jpg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Plantain Pancake <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+
+            <!-- Card 3: Potato Pancake -->
+            <div class="recipe-card" data-target="modal-potato">
+                <div class="card-image" style="background-image: url(/Images/LOGO/potatopancake.jpg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-caption">Potato Pancake <span class="click-hint">View Recipe &rarr;</span></div>
+            </div>
+        </section>
+
+        <!-- 4. MODALS (Hidden by default, shown when cards are clicked) -->
+        
+        <!-- Modal 1: Banana -->
+        <div class="modal-overlay" id="modal-banana">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Banana Pancake</h2>
+                
+                <!-- Quick Info Bar -->
+                <div class="modal-meta">
+                    <span>⏱️ 20 Mins</span>
+                    <span>🍽️ 4 Servings</span>
+                </div>
+
+                <!-- Scrollable Recipe Body -->
+                <div class="modal-body">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>4 not too ripe bananas</li>
+                        <li>1 cup all-purpose flour</li>
+                        <li>1/2 onion(sliced)</li>
+                        <li>1 egg - egg whites would serve as natural raising agent</li>
+                        <li>1/2 sugar </li>
+                        <li>1/2 cup milk - powdered or liquid</li>
+                        <li>1 tsp butter - melted</li>
+                        <li>Fresh pepper, nutmeg powder</li>
+                        <li>1/8 tsp salt</li>
+                        <li>Vannilla flavor</li>
+                    </ul>
+
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Mash the bananas in a large bowl until a smooth slightly watery paste is formed.</li>
+                        <li>In a seperate bowl whisk egg white and sugar until foamy.</li>
+                        <li>Add warm water to powdered milk and mix well</li>
+                        <li>In another bowl beat egg yolk properly, add fresh pepper, vanilla flavor, onions, salt, melted butter and powdered nutmeg. Mix well.</li>
+                        <li>Gradually fold the dry ingredients into the wet mixture. Do not overmix.</li>
+                        <li>Heat a non-stick pan over medium heat and lightly grease it. Add sliced onions and let it fry slightlynto enhance oil flavor.</li>
+                        <li>Fry the batter under very low heat and allow to fold form properly before flipping</li>
+                        <li>Serve warm with honey or maple syrup.</li>
+                        <li>TIP: Bananas are rich in sugar have 75% water and more mosit. Ensure to add less sweetners and liquid. </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: Plantain (Copy of Banana, just change text/images) -->
+        <div class="modal-overlay" id="modal-plantain">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Plantain Pancake</h2>
+                <div class="modal-meta"><span>⏱️ 25 Mins</span><span>🍽️ 4 Servings</span></div>
+                <div class="modal-body">
+                    <h3>Ingredients</h3>
+                    <ul><li>1 ripe plantain</li>
+                        <li>1 cup flour</li>
+                        <li>1 egg - egg whites would serve as your natural rising agent</li>
+                        <li>1/2 cup milk - liquid or powdered</li>
+                        <li>1 tsp butter - melted</li>
+                        <li>1/2 tsp Vanilla flavour</li>
+                        <li>1/8 tsp salt</li>
+                        <li>1/2 tbsp powdered nutmeg</li>
+                        <li>Fresh pepper & onions</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Blend or mash plantains until a smooth paste is formed.</li>
+                        <li>In a seperate bowl beat egg whites and sugar until foamy.</li>
+                        <li>Add warm water to powdered milk and mix well</li>
+                        <li>In another bowl beat egg yolk properly, add fresh pepper, vanilla flavor, onions, salt, melted butter and powdered nutmeg. Mix well.</li>
+                        <li>Add warm milk to plantain paste and smoothen out properly.</li>
+                        <li>Slowly add all wet ingredients into the plaintain paste while mixing. A slightlyw watery paste should formed</li>
+                        <li>Add flour little by little into the watery paste and mix until a semi-thick texture is formed. </li>
+                        <li>Fry on a hot greased pan under low heat until golden brown on both sides. You can spice up frying oil with slices of onions and pepper to give the pancake a more richer taste</li>
+                        <li>Serve with your favorite topping!</li>
+                        <li>TIP: Ensure your batter has a semi-thick texture and fry under low heat so the pancake holds form.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: Potato -->
+        <div class="modal-overlay" id="modal-potato">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Potato Pancake</h2>
+                <div class="modal-meta"><span>️ ⏱️ 30 Mins</span><span>🍽️ 4 Servings</span></div>
+                <div class="modal-body">
+                    <h3>Ingredients</h3>
+                    <ul><li>2 large potatoes (cut into small sized cubes)</li>
+                        <li>1/2 onion (sliced)</li>
+                        <li>1/2 tsp sugar</li>
+                        <li>1 egg - egg whites would serve as your natural raising agent</li>
+                        <li>1 cup of flour</li>
+                        <li>1 tsp butter - melted</li>
+                        <li>Salt, fresh pepper, and garlic powder</li>
+                        <li>Banana & vanilla flavor</li>
+                        <li>Nutmeg powder</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol><li>Cook diced potatoes in water until half done, drain to remove excess water.</li>\
+                        <li>Mash the potatoes until a smooth/thickened paste is formed, leave to cool completely.</li>
+                        <li>In a separate bowl whisk egg whites and sugar until foamy and set aside.</li>
+                        <li>Add warm water to powdered milk and mix well</li>
+                        <li>Beat egg yolk properly, add fresh pepper, flavoring, salt, melted butter, garlic powder and powdered nutmeg. Mix well. </li>
+                        <li>Add liquid milk to mashed potaoes and mix well. Add the wet ingredients slowly and mix until a semi-watery paste is formed.</li>
+                        <li>Add flour in small batches to the paste, each time stirring on meduim until the mixture holds a slightly thick form. Batter must look thick.</li>
+                        <li>First fry the onions lightly and fold into batter. This prevents it from being overcooked since frying the batter takes longer time.</li>
+                        <li>Fry in small, thin patties with hot oil under low heat until crispy and golden on both sides.</li>
+                        <li>Drain on paper towels and serve hot!</li>
+                        <li>TIP: Potatoes are very moist so enusre to drain out excess water as much as possible. Too moist and it takes longer to fry. </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+    </main>
+
+    <!-- Link to the NEW, specific JavaScript file for this page -->
+    <script src="special-hub.js"></script>
+</body>
+</html>

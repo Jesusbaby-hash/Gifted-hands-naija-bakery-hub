@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Gifted Hands Naija Bakery Hub</title>
+    
+    <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="/Images/LOGO/logo.png.png" type="image/png">
+</head>
+<body>
+
+    <!-- 1. HEADER (Same as your other pages) -->
+    <header class="glass-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <img src="/Images/LOGO/logo.png.png" alt="Gifted Hands Logo" class="header-logo">
+        <nav class="nav-dropdown" id="navDropdown">
+            <a href="bakery.html">Home</a>
+            <a href="Recipies.html" class="active-link">Recipies</a>
+            <a href="video-guides.html">Video Guides</a>
+            <a href="about.html">About Us</a>
+            <a href="special-hub.html">Special Hub</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. PAGE INTRO SECTION -->
+        <section class="recipes-intro">
+            <h1 class="recipes-title">OUR RECIPES</h1>
+            <p class="recipes-subtitle">Master the Art of Nigerian Baking</p>
+            <p class="recipes-desc">
+                Explore our comprehensive collection of authentic Nigerian bakery recipes. 
+                Choose a category below to start your baking journey!
+            </p>
+        </section>
+
+        <!-- 3. CATEGORY CARDS GRID -->
+        <section class="category-grid">
+            
+            <!-- Category 1: Nigerian Snacks -->
+            <a href="recipes-nigerian.html" class="category-card">
+                <!-- Replace with your actual image later -->
+                <div class="card-bg" style="background-image: url(/Images/nigeriansnacks.jpg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h2>Nigerian Snacks</h2>
+                    <p>Meat Pie, Chin Chin, Puff Puff & More</p>
+                    <span class="explore-btn">Explore &rarr;</span>
+                </div>
+            </a>
+
+            <!-- Category 2: Special Treats -->
+            <a href="recipes-special.html" class="category-card">
+                <div class="card-bg" style="background-image: url(/Images/speical\ treats\ 2.jpg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h2>Special Treats</h2>
+                    <p>Small Chops, Parfait, Shawarma & More</p>
+                    <span class="explore-btn">Explore &rarr;</span>
+                </div>
+            </a>
+
+            <!-- Category 3: Cakes & Bakes -->
+            <a href="recipes-cakes.html" class="category-card">
+                <div class="card-bg" style="background-image: url(/Images/cakes\ and\ bakes.jpg);"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h2>Cakes & Bakes</h2>
+                    <p>Red Velvet, Chocolate, Sponge & More</p>
+                    <span class="explore-btn">Explore &rarr;</span>
+                </div>
+            </a>
+
+        </section>
+    </main>
+
+    <!-- Link to your existing menu JavaScript -->
+     <!-- <script>src="function.js"</script> -->
+    <script src="Recipies.js"></script>
+</body>
+</html>

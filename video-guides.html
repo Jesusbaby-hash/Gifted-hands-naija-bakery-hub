@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Guides - Gifted Hands Naija Bakery Hub</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="/Images/LOGO/logo.png.png" type="image/png">
+</head>
+<body>
+
+    <!-- 1. HEADER -->
+    <header class="glass-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <img src="/Images/LOGO/logo.png.png" alt="Gifted Hands Logo" class="header-logo">
+        <nav class="nav-dropdown" id="navDropdown">
+            <a href="index.html">Home</a>
+            <a href="Recipies.html">Recipies</a>
+            <a href="video-guides.html" class="active-link">Video Guides</a>
+            <a href="about.html">About Us</a>
+            <a href="special-hub.html">Special Hub</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. HERO SECTION -->
+        <section class="video-hero">
+            <video autoplay muted loop playsinline class="hero-bg-video">
+                <source src="/Vidoes/hero-baking.mp4" type="video/mp4">
+            </video>
+            <div class="video-hero-overlay"></div>
+            <div class="video-hero-content">
+                <h1 class="hero-title">WELCOME TO OUR VIDEO GUIDES</h1>
+                <p class="hero-subtitle">Watch, Learn, and Master the Art of Nigerian Baking</p>
+            </div>
+        </section>
+
+        <!-- 3. VIDEO CATEGORIES -->
+        <section class="video-categories-container">
+            
+            <!-- CATEGORY 1: Nigerian Snacks (5 Videos) -->
+            <div class="category-block">
+                <h2 class="category-heading">🥟 Nigerian Snacks</h2>
+                <div class="recipe-cards-grid">
+                    
+                    <!-- Video Card 1: Meat Pie -->
+                    <div class="recipe-card video-card" data-target="modal-video-meatpie">
+                        <div class="card-image" style="background-image: url('/Images/meaTpie.jpg');"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Perfect Meat Pie
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 12:00</span>
+                                <span class="difficulty">⭐⭐ Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2: Puff Puff -->
+                    <div class="recipe-card video-card" data-target="modal-video-puffpuff">
+                        <div class="card-image" style="background-image: url('/Images/puffpuff.jpg');"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Fluffy Puff Puff
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 07:46</span>
+                                <span class="difficulty">⭐ Easy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3: Fish Pie (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-fishpie">
+                        <div class="card-image" style="background-image: url(/Images/fishpie.png);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Savory Fish Pie
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 12:12</span>
+                                <span class="difficulty">⭐⭐ Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 4: Butter Pie (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-butterpie">
+                        <div class="card-image" style="background-image: url(/Images/butterpie.png);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Flaky Butter Pie
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 06:03</span>
+                                <span class="difficulty">⭐⭐ Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 5: Peanut (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-peanut">
+                        <div class="card-image" style="background-image: url(/Images/peanut.webp);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Roasted Peanut
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 08:08</span>
+                                <span class="difficulty">⭐ Easy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CATEGORY 2: Special Treats (4 Videos) -->
+            <div class="category-block">
+                <h2 class="category-heading">🌟 Special Treats</h2>
+                <div class="recipe-cards-grid">
+                    
+                    <!-- Video Card 6: Shawarma -->
+                    <div class="recipe-card video-card" data-target="modal-video-shawarma">
+                        <div class="card-image" style="background-image: url(/Images/sideviewsharwarma.webp);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Loaded Shawarma
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 08:39</span>
+                                <span class="difficulty">⭐⭐ Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 7: Parfait (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-parfait">
+                        <div class="card-image" style="background-image: url(/Images/parfait.webp);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Nigerian Parfait
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 04:41</span>
+                                <span class="difficulty">⭐ Easy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 8: Pizza (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-pizza">
+                        <div class="card-image" style="background-image: url('/Images/pizza.jpg');"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Nigerian Style Pizza
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 12:22</span>
+                                <span class="difficulty">⭐⭐ Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 9: Yogurt (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-yogurt">
+                        <div class="card-image" style="background-image: url(/Images/yoghurt.png);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Homemade Yogurt
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 10:15</span>
+                                <span class="difficulty">⭐⭐ Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CATEGORY 3: Cakes & Bakes (4 Videos) -->
+            <div class="category-block">
+                <h2 class="category-heading">🎂 Cakes & Bakes</h2>
+                <div class="recipe-cards-grid">
+                    
+                    <!-- Video Card 10: Chocolate Cake -->
+                    <div class="recipe-card video-card" data-target="modal-video-chocolate">
+                        <div class="card-image" style="background-image: url(/Images/chocolatecake.webp);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Rich Chocolate Cake
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 14:28</span>
+                                <span class="difficulty">⭐⭐⭐ Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 11: Red Velvet (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-redvelvet">
+                        <div class="card-image" style="background-image: url(/Images/redvelvet2.webp);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Red Velvet Cake
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 20:09</span>
+                                <span class="difficulty">⭐⭐⭐ Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 12: Strawberry Cake (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-strawberry">
+                        <div class="card-image" style="background-image: url(/Images/strawberrycake.webp);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Fresh Strawberry Cake
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 10:46</span>
+                                <span class="difficulty">⭐⭐ Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 13: Cream Cake (NEW) -->
+                    <div class="recipe-card video-card" data-target="modal-video-creamcake">
+                        <div class="card-image" style="background-image: url(/Images/creamcake.jpg);"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-caption">
+                            Simple Cream Cake
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 09:52</span>
+                                <span class="difficulty">⭐ Easy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 4. VIDEO MODALS -->
+        
+        <!-- Modal 1: Meat Pie Video -->
+        <div class="modal-overlay" id="modal-video-meatpie">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Perfect Nigerian Meat Pie</h2>
+                <div class="modal-meta"><span>⏱️ 12:00 Mins</span><span>⭐⭐ Medium</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/KpwvzvaNC5U" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Keep your butter and water ICE COLD for a flaky crust.</li>
+                        <li>Don't overmix the dough, or it will become tough.</li>
+                        <li>Cook your filling completely and let it cool before filling.</li>
+                        <li>Bake at 350°F (175°C) until golden brown.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-nigerian.html#modal-meatpie">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: Puff Puff Video -->
+        <div class="modal-overlay" id="modal-video-puffpuff">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Soft & Fluffy Puff Puff</h2>
+                <div class="modal-meta"><span>⏱️ 07:46 Mins</span><span>⭐ Easy</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/TLhTfo2oreU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Use WARM water, not hot, to activate the yeast.</li>
+                        <li>Let the batter rise for at least 1 hour until bubbly.</li>
+                        <li>Use your hand to squeeze out perfectly round balls.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-nigerian.html#modal-puffpuff">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: Fish Pie Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-fishpie">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Savory Fish Pie</h2>
+                <div class="modal-meta"><span>⏱️ 12:12 Mins</span><span>⭐⭐ Medium</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/60g0F-T15jU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Use boneless fish and shred it finely for easy eating.</li>
+                        <li>Add diced boiled eggs for extra protein and flavor.</li>
+                        <li>Don't forget the scotch bonnet pepper for that Nigerian kick!</li>
+                        <li>Seal the edges tightly to prevent filling from leaking.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-nigerian.html#modal-fishpie">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4: Butter Pie Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-butterpie">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Flaky Butter Pie</h2>
+                <div class="modal-meta"><span>⏱️ 6:03 Mins</span><span>⭐⭐ Medium</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/UHAW3cyL3d4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Use HIGH QUALITY cold butter for the best flaky layers.</li>
+                        <li>Work quickly to keep the butter cold while making the dough.</li>
+                        <li>Let the filling cool completely before adding to avoid sogginess.</li>
+                        <li>Brush with egg wash for that beautiful golden shine.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-nigerian.html#modal-butterpie">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5: Peanut Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-peanut">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Perfect Peanut Burger</h2>
+                <div class="modal-meta"><span>⏱️ 08:08 Mins</span><span>⭐ Easy</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/xKBTDc1J010" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Wash and dry the raw peanuts thoroughly before roasting.</li>
+                        <li>Stir CONSTANTLY to prevent burning.</li>
+                        <li>The skins will start to peel off when they're done.</li>
+                        <li>Add salt and pepper while still hot for best flavor absorption.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-nigerian.html#modal-peanut">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6: Shawarma Video -->
+        <div class="modal-overlay" id="modal-video-shawarma">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Loaded Chicken Shawarma</h2>
+                <div class="modal-meta"><span>⏱️ 08:39 Mins</span><span>⭐⭐ Medium</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/gr12KLMNg4U" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Marinate your chicken overnight for the best flavor.</li>
+                        <li>Make your spicy mayo by mixing mayo, ketchup, and pepper.</li>
+                        <li>Roll it tight! Fold the sides in before rolling.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-special.html#modal-shawarma">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 7: Parfait Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-parfait">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Layered Nigerian Parfait</h2>
+                <div class="modal-meta"><span>⏱️ 04:41 Mins</span><span>⭐ Easy</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/lEWInyKu08E" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Use a tall, clear glass to show off the beautiful layers.</li>
+                        <li>Start with granola or crushed biscuits at the bottom.</li>
+                        <li>Add fresh fruits like berries, banana, and grapes.</li>
+                        <li>Drizzle with honey for that extra sweetness!</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-special.html#modal-parfait">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 8: Pizza Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-pizza">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Nigerian Style Pizza</h2>
+                <div class="modal-meta"><span>⏱️ 12:22 Mins</span><span>⭐⭐ Medium</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/XKC62IFnH2s" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Let the yeast foam for 10 minutes before mixing with flour.</li>
+                        <li>Knead the dough until smooth and elastic.</li>
+                        <li>Let it rise for 45 minutes until doubled in size.</li>
+                        <li>Bake at 400°F (200°C) until crust is golden and cheese is bubbly.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-special.html#modal-pizza">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 9: Yogurt Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-yogurt">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Creamy Homemade Yogurt</h2>
+                <div class="modal-meta"><span>⏱️ 10:15 Mins</span><span>⭐⭐ Medium</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/rYb9rYWLPRk" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Heat milk until it just simmers, then cool to lukewarm (110°F/43°C).</li>
+                        <li>Full cream milk and added powdered milk = thickest result. Low fat milk gives thinner yogurt.</li>
+                        <li>Cover tightly and keep in a warm place for 8-12 hours=.</li>
+                        <li>Refrigerate for at least 4 hours to thicken before serving.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-special.html#modal-yogurt">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 10: Chocolate Cake Video -->
+        <div class="modal-overlay" id="modal-video-chocolate">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Rich Chocolate Cake</h2>
+                <div class="modal-meta"><span>⏱️ 14:28 Mins</span><span>⭐⭐⭐ Advanced</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/vI5w-fK25w4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Sift your dry ingredients to avoid lumps.</li>
+                        <li>Do not overmix the batter once you add the flour.</li>
+                        <li>Let the cakes cool COMPLETELY before frosting.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-cakes.html#modal-chocolate">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 11: Red Velvet Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-redvelvet">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Classic Red Velvet Cake</h2>
+                <div class="modal-meta"><span>⏱️ 20:09 Mins</span><span>⭐⭐⭐ Advanced</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/paghUfkDpVE" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Use buttermilk for that signature tangy flavor and tender crumb.</li>
+                        <li>Don't skip the vinegar - it reacts with baking soda for lift.</li>
+                        <li>If you want a natural version of coloring, use beetroot.</li>
+                        <li>Add red food coloring gradually until you get that deep red color.</li>
+                        <li>Cream cheese frosting is a MUST for authentic red velvet!</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-cakes.html#modal-redvelvet">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 12: Strawberry Cake Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-strawberry">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Fresh Strawberry Cake</h2>
+                <div class="modal-meta"><span>⏱️ 10:46 Mins</span><span>⭐⭐ Medium</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/fmD5GnrtOjc" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Use fresh strawberries and puree them for intense flavor.</li>
+                        <li>Add a drop of red food coloring for that pink hue.</li>
+                        <li>Frost with strawberry buttercream for double the strawberry love!</li>
+                        <li>Top with fresh sliced strawberries for decoration.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-cakes.html#modal-strawberry">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 13: Cream Cake Video (NEW) -->
+        <div class="modal-overlay" id="modal-video-creamcake">
+            <div class="modal-content video-modal-content">
+                <button class="close-modal">&times;</button>
+                <h2 class="modal-title">Simple Vanilla  Cream Cake</h2>
+                <div class="modal-meta"><span>⏱️ 09:52 Mins</span><span>⭐ Easy</span></div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/OBdE2ht_Rdo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <h3>Key Steps to Remember:</h3>
+                    <ol>
+                        <li>Cream butter and sugar until light and fluffy for a tender cake.</li>
+                        <li>Warm cream will not whip. Use cream with at least 35% fat.</li>
+                        <li>Add eggs one at a time, beating well after each addition.</li>
+                        <li>Whip heavy cream with powdered sugar until stiff peaks form.Dont use regular milk or evaporated milk.</li>
+                        <li>Keep refrigerated. Best eaten within 2 days. Always transport chilled.</li>
+                    </ol>
+                    <div class="related-recipe-link">
+                        <p>Want the exact measurements?</p>
+                        <a href="recipes-cakes.html#modal-creamcake">📖 Read the Full Written Recipe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="video-guides.js"></script>
+</body>
+</html>
